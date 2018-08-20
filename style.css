@@ -1,0 +1,153 @@
+/*Tic Tac Toe Version 0.2*/
+
+
+body {
+
+	background-image: url(img/bg.jpg);
+}
+
+
+svg {
+
+  margin: 0;
+}
+
+label {
+	display: block;
+	width: 87px;
+	float: left;
+}
+
+input,select {
+	border-radius: 7px;
+}
+
+#gm {
+	width: 166px;
+}
+
+#main {
+	height:546px;
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 100px;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 2px solid #ffffff;
+	background-color: white;
+}
+
+
+
+#leftside {
+	height: 100%;
+	width: 254px;
+	/*border-right: : 2px solid #ffffff;*/
+	float: left;
+	background-color: white;
+	border-radius: 7px;
+}
+
+
+#rightside {
+	height: 100%;
+	width:546px;
+	float: left;
+	background: white;
+	/*padding-left: 5px;*/
+	border-radius: 0px 7px 7px 0px;
+	-moz-border-radius: 0px 7px 7px 0px;
+	-webkit-border-radius: 0px 7px 7px 0px;
+	
+}
+
+
+.box {
+	height: 180px;
+	width: 180px;
+	margin:1px ;
+	float: left;
+	background:#C0C0C0;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	transition: .5s;
+}
+
+
+.box:hover {
+
+	background: #909090;
+}
+
+#circle {
+  stroke-dashoffset: 628.3185307179587;
+  stroke-dasharray: 628.3185307179587;
+}
+
+#line1 {
+  stroke-dashoffset: 628.3185307179587;
+  stroke-dasharray: 628.3185307179587;
+}
+.animate {
+  stroke-dasharray: 628.3185307179587;
+  stroke-dashoffset: 628.3185307179587;
+  animation: dash 0.5s linear alternate forwards;
+}
+@keyframes dash {
+  from {
+    stroke-dashoffset: 629;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#line2 {
+  stroke-dashoffset: 628.3185307179587;
+  stroke-dasharray: 628.3185307179587;
+}
+.animate2 {
+  stroke-dasharray: 628.3185307179587;
+  stroke-dashoffset: 628.3185307179587;
+  animation: dashs 0.5s linear normal forwards;
+  animation-delay: 0.2s;
+}
+@keyframes dashs {
+  from {
+    stroke-dashoffset: 629;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#btn {
+ display: inline-block;
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 200px; 
+  padding: 10px 15px 12px;
+  font: 700 12px/1 'Open Sans', sans-serif;
+  border-radius: 7px;
+  box-shadow: inset 0 -1px 0 1px rgba(0,0,0,.1), inset 0 -10px 20px rgba(0,0,0,.1);
+  cursor: pointer;
+
+  }
+
+
+  #nextmove {
+
+  	width: 250px;
+  	height: 60px;
+  	border-radius: 7px;
+  	background-color: gray;
+  	font: 700 12px/1 'Open Sans', sans-serif;
+  	color: white;
+  	text-align: center;
+  	padding-top: 10px;
+  	margin: 0 auto;
+
+
+  }
